@@ -7,7 +7,7 @@ const unsafeCharactersRegex = /[ !"#$%&'()*+,/:;<=>?@[\]^`{|}~]/g
 
 export const Post = defineDatabase(() => ({
   name: "Post",
-  databaseId: "ac9de07d2e7a4929af46a6d6fb81b019",
+  databaseId: "61df16f586364f84a93c50890dc5fa4f",
   query: {
     filter: {
       property: "Status",
@@ -28,7 +28,7 @@ export const Post = defineDatabase(() => ({
   computedFields: {
     url: {
       type: "string",
-      resolve: (post) => `/posts/${post._id}`,
+      resolve: (post) => `/blog/${post._id}`,
     },
   },
 }))
